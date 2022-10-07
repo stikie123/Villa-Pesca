@@ -600,8 +600,9 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .img-thumbnail {
@@ -11298,6 +11299,39 @@ body {
   height: 100%;
 }
 
+@media screen and (min-width:568px){
+  .cards-wrapper{display: flex;}
+}
+.card {
+  margin: 0.5rem;
+  width: calc(100%/3);
+  border: none;
+  border-radius: 10%;
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.8);
+}
+#cardSm{
+  width: auto;
+}
+.carousel-control-next,.carousel-control-prev{
+  border-radius: 50%;
+  transform: translateY(-30%);
+  top: 50%;
+  height: 6vh;
+  width: 6vh;
+  background-color: #b74a2c;
+}
+.carousel-inner{
+  padding: 1rem;
+}
+.image-wrapper{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 567px) {
+  .card:not(:first-child){display: none;}
+}
+
 .page-section {
   padding: 8rem 0;
 }
@@ -11392,7 +11426,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/375868849.jpg?k=615d1927f33c0711dc2756975281200037069be0dab34a3fb263d5d2aebfe99b&o=&hp=1");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11421,14 +11455,14 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
-#portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
+#images .container-fluid, #images .container-sm, #images .container-md, #images .container-lg, #images .container-xl, #images .container-xxl {
   max-width: 1920px;
 }
-#portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box, #portfolio .container-xxl .portfolio-box {
+#images .container-fluid .portfolio-box, #images .container-sm .portfolio-box, #images .container-md .portfolio-box, #images .container-lg .portfolio-box, #images .container-xl .portfolio-box, #images .container-xxl .portfolio-box {
   position: relative;
   display: block;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption, #portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+#images .container-fluid .portfolio-box .portfolio-box-caption, #images .container-sm .portfolio-box .portfolio-box-caption, #images .container-md .portfolio-box .portfolio-box-caption, #images .container-lg .portfolio-box .portfolio-box-caption, #images .container-xl .portfolio-box .portfolio-box-caption, #images .container-xxl .portfolio-box .portfolio-box-caption {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11444,15 +11478,20 @@ header.masthead h1, header.masthead .h1 {
   transition: opacity 0.25s ease;
   text-align: center;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
+#images .container-fluid .portfolio-box .portfolio-box-caption .project-category, #images .container-sm .portfolio-box .portfolio-box-caption .project-category, #images .container-md .portfolio-box .portfolio-box-caption .project-category, #images .container-lg .portfolio-box .portfolio-box-caption .project-category, #images .container-xl .portfolio-box .portfolio-box-caption .project-category, #images .container-xxl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+#images .container-fluid .portfolio-box .portfolio-box-caption .project-name, #images .container-sm .portfolio-box .portfolio-box-caption .project-name, #images .container-md .portfolio-box .portfolio-box-caption .project-name, #images .container-lg .portfolio-box .portfolio-box-caption .project-name, #images .container-xl .portfolio-box .portfolio-box-caption .project-name, #images .container-xxl .portfolio-box .portfolio-box-caption .project-name {
   font-size: 1.2rem;
 }
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+#images .container-fluid .portfolio-box:hover .portfolio-box-caption, #images .container-sm .portfolio-box:hover .portfolio-box-caption, #images .container-md .portfolio-box:hover .portfolio-box-caption, #images .container-lg .portfolio-box:hover .portfolio-box-caption, #images .container-xl .portfolio-box:hover .portfolio-box-caption, #images .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+.hrList{
+  border-width: 2px ; 
+  border-color: black; 
+  border-style: solid;
 }
