@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Villa Pesca - Booking" />
+        <meta name="author" content="Villa Pesca" />
+        <title>Villa Pesca - Booking</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/styles.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/ed0123b2c5.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="/index.html">Villa Pesca<a href="https://goo.gl/maps/8bNq5YmNWaJSuV916"><i class="fa-solid fa-location-dot"></i>Location</a></a>
+            
+        </div>
+    </nav>
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-150">
+            <div class="row gx-4 gx-lg-5 h-50
+             align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self">
+                    <h1 class="text-white font-weight-bold">Book Now</h1>
+                    <hr class="divider" />
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5" >
+                <div class="col-lg-6">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <div style="visibility: hidden; position: absolute;" class="container bookForm">
+                        <form  target="_blank" action="https://formsubmit.co/villapesca1@gmail.com" method="POST">
+                         
+                </div>
+            </div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #f4623a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #f4623a;
+}
+</style>
+<body>
+    <div class="row gx-4 gx-lg-5 justify-content-center mb-5" >
+        <div class="col-lg-6">
+
+    <div class="container bookForm">
+<form id="regForm" target="_blank" action="https://formsubmit.co/villapesca1@gmail.com" method="POST">
+    <div class="form-group">
+        <div class="form-row">
+
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab form-floating mb-3">Name:
+    <p><input type="text" class="form-control" required placeholder="First name..." name="fname"></p>
+    <p><input type="text" class="form-control" required placeholder="Last name..." name="lname"></p>
+    Contact Info:
+    <p><input type="email" class="form-control" placeholder="E-mail..." name="email"></p>
+    <p><input type="tel" class="form-control" placeholder="Phone..." name="phone"></p>
+  </div>
+</div>
+</div>
+
+<div class="form-group">
+    <div class="form-row">
+<div class="tab form-floating mb-3">Address:
+    <p><input type="text" class="form-control" required placeholder="Country" name="country" required></p>
+    <p><input type="text" class="form-control" required placeholder="City" name="city" required></p>
+    <p><input type="text" class="form-control" placeholder="Street Address" name="street" required></p>
+  </div>
+  </div>
+  </div>
+ 
+  <div class="tab form-floating mb-3" >Amount adults:(13 Years and older)
+<p><input type="number" class="form-control" name="amountAdults" min="1" max="8" id="amountAdults" placeholder="1-8" required></p>
+Amount Children:(12 and under)
+<p><input type="number" class="form-control" name="amountChildren" min="0" max="5" id="amountChildren" placeholder="0-5"></p>
+Amount Rooms:(2 People per room)
+<p><input type="number" class="form-control" name="amountRooms" min="1" max="4" onblur="changeRooms()" id="amountRooms" placeholder="1-4"></p>
+  </div>
+  
+  <div class="tab form-floating mb-3" id="resDate">Reservation Date's:
+    <p>Start<input type="date" class="form-control" placeholder="yyyy/mm/dd" onblur="calc()" id="start" name="start"></p>
+    <p>End<input type="date" class="form-control" placeholder="yyyy/mm/dd" onblur="calc()" id="end" name="end"></p>
+    <a style="align-self: center;">From R<span id="fromPPN">0</span> per night</a> 
+  </div>
+  
+  <div class="tab form-floating mb-3" ><h4>Important Info:</h4>
+    <p> On Submission we will answer within 12 hours, whether your booking was excepted or denied with relevant payment details if excepted. <br> </p>
+  Addisional Questions:
+<p><input id="Quistions" class="form-control" name="Quistions" type="textarea" placeholder="Quistions..."></p>
+  </div>
+    
+  <div class="tab form-floating mb-3"><h4> Required Acceptance of RULES and Terms:</h4>
+    By pressing book now you acknowledge that this is merely a booking request
+    <div>
+      <input class="form-check-input" type="checkbox" name="T&C and House rules" id="T&C and House rules" required>
+    </input>
+    <label for="message">Except <a href="/Pages\T&C.html"
+      target="_blank">T&C'S</a> and <a href="/Pages\houseRules.html" target="_blank">HOUSE RULES</a></label>
+      
+
+    <input type="hidden" name="_url" value="https://villapesca.website/bookNow.html">
+  </div>
+  </div>
+ 
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;position: absolute; ">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+</div>
+</div>
+</div>
+<script src="/js\scripts.js"></script>
+
+
+</body>
+</html>
+</section>
+<section class="page-section bg-light" style="margin-top: 5rem;">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                    <div>072 370 8689</div>
+                </div>
+            </div>
+            <!-- Footer-->
+            <footer class="bg-light py-5">
+                <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - <a href="https://github.com/stikie123#:~:text=stikie123,-Edit%20profile">Stikie123</a> </div></div>
+            </footer>
+        </div>
+    </section>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/js/scripts.js"></script>
+    </header>
+</body>
+</html>
