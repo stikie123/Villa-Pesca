@@ -1,0 +1,24 @@
+{
+"routes": [
+{
+"route": "/index.html",
+"redirect": "/",
+"statusCode": 301
+},
+{
+    "route": "booking\bookNow.html",
+    "redirect": "/bookNow",
+    "statusCode": 301
+    },
+{
+    "route": "/houseRules.html",
+    "redirect": "/houseRules",
+    "statusCode": 301
+    },
+    {
+        "route": "/T&C.html",
+        "redirect": "/T&C",
+        "statusCode": 301
+        } 
+]
+}
