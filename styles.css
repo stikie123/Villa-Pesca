@@ -11436,7 +11436,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("https://cf.bstatic.com/xdata/images/hotel/max1280x900/399576785.jpg?k=bf85a2ac2997aca3b518adf145ccb0f55367537a592045e6f0a435e336063202&o=&hp=1");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), src("assets/399576785.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
